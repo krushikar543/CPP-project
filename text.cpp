@@ -121,6 +121,7 @@ void text::init(SDL_Renderer *rend,SDL_Window *wind)
 	}
 	if( e.type == SDL_KEYDOWN ){
                         //Handle backspace
+                	SDL_Delay(200);
     		if( e.key.keysym.sym == SDLK_BACKSPACE && inputText.length() > 0 ){
                             //lop off character
        		inputText.pop_back();
